@@ -1,0 +1,101 @@
+html,
+body {
+    font-size: 1rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+#tabella {
+    width: 300px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+#genera {
+    font-size: 1.5rem;
+    width: 300px;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.item {
+    cursor: pointer;
+    background-color: lightgray;
+    text-align: center;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+#combo-range {
+    margin-top: 30px;
+    width: 300px;
+}
+
+#risultato {
+    display: none;
+    width: 300px;
+    height: 100vh;
+    position: absolute;
+    background: whitesmoke;
+    padding: 5px 20px;
+}
+
+#risultato>p {
+    font-size: 1.5rem;
+    background-color: lightgray;
+    margin: 10px 0;
+    padding: 5px;
+    border-radius: 5px;
+    user-select: none;
+}
+
+#btn-close {
+    display: none;
+    position: absolute;
+    z-index: 9;
+    right: 0;
+    padding: 10px;
+    background: darkgray;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.numero-colore-fisso {
+    background-color: lightcoral;
+}
+
+.numero-colore {
+    background-color: lightgoldenrodyellow;
+}
+
+.numero {
+    text-align: center;
+    border-radius: 50%;
+    width: 31px;
+    display: inline-block;
+    margin: 0px 2px;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+.rainbow {
+    background-image: linear-gradient(to left, violet, indigo, blue, green, #d2d20f, #eb9c0b, red);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
